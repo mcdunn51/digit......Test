@@ -5,15 +5,16 @@ import Card from 'react-bootstrap/Card'
 import Table from 'react-bootstrap/Table'
 
 const Tables = () => {
+
     return (
-        <Row id="tablesWrapper" className="mb-4">
-            <Col>
-                <Card>
+        <Row id="tablesWrapper">
+            <Col xs={12} md={6}>
+                <Card className="mb-4">
                     <Card.Body>
                         <Card.Title>Table 1</Card.Title>
-                        <Card.Text>
+                       
                             <Table striped bordered hover>
-                                <tbody>
+                                <tbody>                                    
                                     <tr>
                                         <td>p</td>
                                         <td>5</td>
@@ -32,15 +33,15 @@ const Tables = () => {
                                     </tr>
                                 </tbody>
                             </Table>
-                        </Card.Text>
+                       
                     </Card.Body>
                 </Card>
             </Col>
-            <Col>
-                <Card>
+            <Col xs={12} md={6}>
+                <Card className="mb-4">
                     <Card.Body>
                         <Card.Title>Table 2</Card.Title>
-                        <Card.Text>
+                        
                             <Table striped bordered hover>
                                 <tbody>
                                     <tr>
@@ -61,7 +62,7 @@ const Tables = () => {
                                     </tr>
                                 </tbody>
                             </Table>
-                        </Card.Text>
+                        
                     </Card.Body>
                 </Card>
             </Col>
@@ -69,4 +70,4 @@ const Tables = () => {
     )
 }
 
-export default Tables
+export default Tables;
